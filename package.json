@@ -1,0 +1,33 @@
+{
+  "name": "api-security-scanner",
+  "version": "1.0.0",
+  "description": "Automated API security testing tool with FastAPI backend and ReactJS frontend",
+  "private": true,
+  "scripts": {
+    "dev": "docker compose -f dev.compose.yml up",
+    "dev:build": "docker compose -f dev.compose.yml up --build",
+    "dev:down": "docker compose -f dev.compose.yml down",
+    "dev:logs": "docker compose -f dev.compose.yml logs -f",
+    "prod": "docker compose up -d",
+    "prod:build": "docker compose up --build -d",
+    "prod:down": "docker compose down",
+    "prod:logs": "docker compose logs -f",
+    "clean": "docker compose -f docker-compose.dev.yml down -v && docker compose -f docker-compose.prod.yml down -v",
+    "clean:all": "npm run clean && docker system prune -af --volumes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/himeshhh/api-security-scanner"
+  },
+  "keywords": [
+    "security",
+    "api-testing",
+    "vulnerability-scanner",
+    "pentesting",
+    "fastapi",
+    "react",
+    "docker"
+  ],
+  "author": "Himesh",
+  "license": "MIT"
+}
