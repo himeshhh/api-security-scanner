@@ -21,7 +21,7 @@ This project demonstrates *modern secure API testing architecture* with containe
 
 ---
 
-# 🏗️ Architecture
+#  Architecture
 
 ```
 User
@@ -176,8 +176,6 @@ MIT License
 ---
 
 #  Author
-
-Replace with your information:
 
 ```
 Himesh
